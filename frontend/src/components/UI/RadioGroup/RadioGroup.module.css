@@ -1,0 +1,14 @@
+.radio_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_group__label {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.radio_group__input {
+  margin-right: 10px;
+  vertical-align: middle;
+}

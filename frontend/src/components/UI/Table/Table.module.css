@@ -1,0 +1,31 @@
+.table__container {
+  margin: 20px 0;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.table tbody tr {
+  border-collapse: collapse;
+  height: 60px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.table tbody tr:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.table tbody tr > td:last-of-type,
+.table thead tr > th:last-of-type {
+  text-align: right;
+}
+
+.table th,
+.table td {
+  padding: 8px 0;
+  text-align: left;
+}

@@ -1,0 +1,45 @@
+version: '3.4'
+
+networks:
+  deploy-guide-dev:
+    driver: bridge
+
+services:
+  backend:
+    container_name: backend
+    image: iakarpov17/timetracker:backend
+    ports:
+      - 5179:80
+      - 5050:443
+    networks:
+      - deploy-guide-dev
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  frontend:
+    container_name: frontend
+    image: iakarpov17/timetracker:frontend
+    ports:
+      - 5173:5173
+    networks:
+      - deploy-guide-dev
+
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: TimeTracerDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5433:5432
+    networks:
+      - deploy-guide-dev
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

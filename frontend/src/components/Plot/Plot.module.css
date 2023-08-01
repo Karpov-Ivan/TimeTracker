@@ -1,0 +1,20 @@
+.plot__container {
+  width: 800px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plot__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 15px 0;
+}
+
+.plot__sheet {
+  margin: 0 auto;
+  width: 790px;
+  height: 390px;
+}

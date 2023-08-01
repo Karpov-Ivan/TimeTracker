@@ -1,0 +1,23 @@
+.token_validation__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.token_validation__title {
+  padding-bottom: 10px;
+}
+
+.token_validation__description {
+  font-size: 14px;
+  max-width: 350px;
+}
+
+.token_validation__description ol {
+  padding-left: 16px;
+}
+
+.token_validation__button {
+  padding-top: 15px;
+}

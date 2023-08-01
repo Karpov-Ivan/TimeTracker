@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: var(--primary-200);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+  min-width: 60px;
+  min-height: 30px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

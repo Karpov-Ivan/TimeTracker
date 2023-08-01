@@ -1,0 +1,48 @@
+.page_auth__container {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.page_auth__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page_auth__title {
+  margin: 10px 0;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.page_auth__content__description {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.page_auth__content__description_light {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.page_auth__content__auth_row {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  gap: 25px;
+}
+
+.page_auth__content__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
